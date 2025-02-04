@@ -14,7 +14,7 @@ By completing this lab, you will:
 ---
 
 ## **📌 Getting Started**
-## **📌 Copy Files to Your Team Repository**
+## **📌 Copy Files to the Fork of Your Team Repository**
 Once you've cloned this repository, copy the files into your **team repository** under the appropriate directory.
 
 ```bash
