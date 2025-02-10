@@ -11,6 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+    defaults:
+      run:
+        working-directory: ci_lab  # Set the default working directory for all steps
 
     steps:
       - name: Checkout Repository
@@ -26,10 +29,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Tests with Pytest
-        run: pytest --cov=ci_lab/src --cov-report=term-missing
+        run: pytest --cov=src --cov-report=term-missing
 
       - name: Install Flake8
         run: pip install flake8
 
       - name: Run Flake8 Linting
-        run: flake8 ci_lab/src --count --select=E9,F63,F7,F82 --show-source --statistics
+        run: flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
