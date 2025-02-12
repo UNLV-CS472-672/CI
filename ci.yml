@@ -2,11 +2,7 @@ name: CI Workflow  # Name of the workflow
 
 on:
   push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
 
 jobs:
   build:
