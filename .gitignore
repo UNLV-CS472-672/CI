@@ -38,10 +38,10 @@ coverage.xml
 
 # Ignore pytest cache
 .cache/
-pytest_cache/
+.pytest_cache/
 
 # Ignore Windows-specific files
-NTUSER.DAT  # Windows user settings
+NTUSER.DAT
 ntuser.ini
 ntuser.dat.log*
 hiberfil.sys  # Windows hibernation file
