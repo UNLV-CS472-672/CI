@@ -1,6 +1,12 @@
-from flask import Flask
+"""
+Counter API package.
 
-app = Flask(__name__)
+Re-exports the Flask app and the HTTP status codes so tests can use:
+    from src import app
+    from src import status
+"""
 
-from src import counter  # Ensure you import the routes
-from src.counter import app  # Expose Flask app for testing
+from src.counter import app
+from src import status
+
+__all__ = ["app", "status"]
